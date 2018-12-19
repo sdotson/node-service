@@ -5,6 +5,7 @@ require('http-shutdown').extend();
 
 const bodyParser = require('body-parser');
 const config = require('config');
+const cors = require('cors');
 const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -16,6 +17,7 @@ const app = express();
 const gpcRoutes = require('./src/gpc/email');
 
 // Middleware
+app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(morgan("common"));  
