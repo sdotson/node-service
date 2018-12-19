@@ -1,0 +1,22 @@
+{
+  "name": "sparkpost-service",
+  "version": "1.0.0",
+  "description": "sparkpost service for sending emails",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "celebrate": "^9.0.1",
+    "config": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.3.2",
+    "helmet": "^3.15.0",
+    "http": "^0.0.0",
+    "http-shutdown": "^1.2.0",
+    "morgan": "^1.9.1",
+    "node-config": "^0.0.2",
+    "redis": "^2.8.0",
+    "sparkpost": "^2.1.3"
+  }
+}
