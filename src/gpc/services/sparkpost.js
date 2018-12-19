@@ -33,6 +33,7 @@ const sendEmail = ({ email, firstName, lastName, subject, message }) => {
     return data;
   })
   .catch((err) => {
+    console.log('SPARKPOST ERROR', err);
     throw new(err);
   });
 };

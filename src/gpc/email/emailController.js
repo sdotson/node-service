@@ -17,6 +17,7 @@ const sendEmail = async (req, res) => {
       });
     }
   } catch (err) {
+    console.log('err', err);
     res.status(500).send({
       message: 'failure',
       err
