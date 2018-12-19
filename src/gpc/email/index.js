@@ -12,9 +12,7 @@ const { sendEmailJoi } = require('./validations');
 router.post('/gpc/v1/email',
   celebrate(sendEmailJoi),
   cors({  
-    origin: [config.get('gpc.accessControl')],
-    methods: ["POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
+    origin: config.get('gpc.accessControl')
   }),
   emailController.sendEmail
 );
