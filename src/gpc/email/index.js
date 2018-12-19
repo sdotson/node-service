@@ -13,7 +13,7 @@ router.post('/gpc/v1/email',
   celebrate(sendEmailJoi),
   cors({  
     origin: [config.get('gpc.accessControl')],
-    methods: ["POST"],
+    methods: ["POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
   }),
   emailController.sendEmail
